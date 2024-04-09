@@ -89,12 +89,25 @@ $(document).ready(function(){
 
     var owl = $('#review-slider');
     owl.owlCarousel({
-        items:3,
+        // items:3,
         loop:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items : 1,
+                nav: false,
+            },
+            768:{
+                items : 3,
+            },
+            1140:{
+                items : 3,
+                center: true,
+            }
+        }
     });
     $('.play').on('click',function(){
         owl.trigger('play.owl.autoplay',[5000])
