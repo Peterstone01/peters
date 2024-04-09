@@ -334,6 +334,9 @@ img{
     top:50%;
    
 }
+.team-members .content h3{
+    font-size: 13px !important;
+}
 /*****************************reviews page ************************/
 .item{
     padding: 30px;
@@ -404,7 +407,10 @@ footer{
     border-top: 1px solid rgba(192, 192, 192, 0.408);
 }
 
-.footer-top .social-links{
+.footer-top .social-links i{
     color: var(--color-1) !important;
 }
 /****************************modal/contact************/
+
+
+
